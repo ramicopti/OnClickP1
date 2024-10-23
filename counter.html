@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the button to increase the counter by one."
+
+
+
+
+
+</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .counter {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <div class="counter" id="counter">0</div>
+    <button onclick="increaseCounter()">Click here</button>
+    <h5>By:Rami Copti</h5>
+
+    <script>
+        let count = 0; // ??????? ???? ???? ?????
+
+        function increaseCounter() {
+            count++; // ????? ????? ?????? ????
+            document.getElementById('counter').innerText = count; // ????? ???? ?? ??????
+        }
+    </script>
+</body>
+</html>
